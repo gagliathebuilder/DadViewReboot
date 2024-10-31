@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Parenting in The OC: Tips and insights for raising children in today's challenging economy.">
-    <meta name="keywords" content="parenting, The OC, tips, family activities, childcare, financial planning, dad blog">
+    <meta name="description" content="Parenting in The OC: Tips and insights for raising children, parenting tips, and insights into family life in The OC.">
+    <meta name="keywords" content="parenting, family, The OC, dad blog, family activities, parenting tips">
     <link rel="stylesheet" href="styles.css">
     <title>Dadseyeview - A Dad's Perspective on Raising Children in The OC</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
         <img src="assets/images/your-logo.png" alt="Dadseyeview Logo" class="logo">
         <div class="header-container">
             <h1 style="font-family: 'Nunito', sans-serif; font-weight: 800;">Dadseyeview</h1>
-            <p class="tagline" style="font-family: 'Nunito', sans-serif; font-weight: 600;">Navigating Challenges and Enjoying Life with Young Children in The OC</p>
+            <p class="tagline" style="font-family: 'Nunito', sans-serif; font-weight: 600;">Navigating Challenges and Finding Joy with Young Children in The OC</p>
         </div>
     </header>
 
@@ -34,6 +34,8 @@
                 <li><a href="focus.html">Focus Areas</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="lifesgood.html">Life's GOOD</a></li>
+                <li><a href="tips.html">Tips, Tricks, & Tech</a></li>
+                <li><a href="videos.html">Videos</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
@@ -47,36 +49,47 @@
         </div>
     </section>
 
-    <!-- Featured Section -->
-    <section class="featured-section">
-        <div class="featured-item">
-            <img src="assets/images/featured1.jpg" alt="Family activities" class="featured-image">
-            <div>
-                <h3>Life's GOOD Overview</h3>
-                <p>Explore how financial freedom can transform family life through meaningful experiences, travel, giving back, and creating lasting memories.</p>
-                <a href="lifesgood.html" class="cta-button">Read Full Story</a>
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-content">
+            <h2>About Dadseyeview</h2>
+            <p>This blog is a dad's perspective of all the things our wives deal with on a daily basis and how we can help—or at least try to improve their process. Humor is a must. It’s also about me, my family, and why I created this space as an outlet for dads of all ages and stages of life.</p>
+        </div>
+    </section>
+
+    <!-- Focus Areas Section -->
+    <section class="focus-areas-section">
+        <div class="focus-areas-content">
+            <h2>Focus Areas</h2>
+            <p>From education, savings, and school selection to where to live, this section covers the important topics that affect our children’s future and well-being.</p>
+        </div>
+    </section>
+
+    <!-- Life's GOOD Section -->
+    <section class="lifesgood-section">
+        <div class="lifesgood-content">
+            <h2>Life's GOOD</h2>
+            <p>Life's GOOD is all about taking care of your family and yourself in a healthy way. From family weekends and after-work quality time to practical tips, tricks, and hacks for a balanced life.</p>
+            <div class="featured-image">
+                <img src="assets/images/family-adventures.jpg" alt="Family Adventures">
             </div>
         </div>
-        <div class="featured-item">
-            <img src="assets/images/featured2.jpg" alt="Parenting in OC" class="featured-image">
-            <div>
-                <h3>Parenting in The OC</h3>
-                <p>Practical insights on navigating parenting, affordability, and work-life balance in an expensive place like The OC.</p>
-                <a href="blog.html" class="cta-button">Explore More</a>
-            </div>
+    </section>
+
+    <!-- Tips, Tricks, & Tech Section -->
+    <section class="tips-tricks-tech-section">
+        <div class="tips-tricks-tech-content">
+            <h2>Tips, Tricks, & Tech</h2>
+            <p>Welcome to the dad fun zone—a place to share and comment on the latest gadgets, must-haves, and workarounds for those challenging moments.</p>
         </div>
     </section>
 
     <!-- Video Section Placeholder -->
     <section class="video-section">
-        <h2>Featured Videos</h2>
-        <p>Coming Soon: Watch our latest family adventures and tech tips in video format!</p>
-    </section>
-
-    <!-- Featured Dad Section Placeholder -->
-    <section class="featured-dad-section">
-        <h2>Featured Dad of the Month</h2>
-        <p>Highlighting amazing dads in our community. Stay tuned for this month's feature!</p>
+        <div class="video-content">
+            <h2>Featured Videos</h2>
+            <p>Explore household DIY projects or funny, AFV-type videos submitted by our registered followers. Coming soon!</p>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -91,4 +104,16 @@
 
     <script src="scripts.js"></script>
 </body>
+<!-- Adding smooth scroll script to improve navigation experience -->
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
 </html>
