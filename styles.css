@@ -140,3 +140,48 @@ nav ul li a:hover {
 .video-section {
     padding: 60px;
     background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Footer */
+.footer-container {
+    background: #2c3e50;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0 0;
+}
+
+.footer-container ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-container ul li a:hover {
+    color: #ff7f50;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}

@@ -1,23 +1,30 @@
-// Smooth Scroll Functionality for Navigation Links
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+// Smooth Scroll for Navigation Links
+document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({
+            behavior: 'smooth'
+        });
     });
 });
 
-// Placeholder for Future Form Handling or Other Functionalities
-function placeholderFunctionality() {
-    console.log("This is a placeholder for future JavaScript functionality.");
+// Sticky Navbar Effect
+window.addEventListener('scroll', function() {
+    const nav = document.querySelector('.sticky-nav');
+    if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+});
+
+// Placeholder for Video Section (Future Enhancement)
+function loadVideoContent() {
+    const videoSection = document.querySelector('.video-section');
+    videoSection.innerHTML += '<p>Loading more videos... Stay tuned!</p>';
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Any future DOM-related functions can be added here.
-    placeholderFunctionality();
+document.addEventListener('DOMContentLoaded', function() {
+    loadVideoContent();
 });
