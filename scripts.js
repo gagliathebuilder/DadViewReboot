@@ -3,9 +3,11 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-        target.scrollIntoView({
-            behavior: 'smooth'
-        });
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     });
 });
 
@@ -19,7 +21,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Placeholder for Video Section (Future Enhancement)
+// Placeholder for Future Video Content Loading
 function loadVideoContent() {
     const videoSection = document.querySelector('.video-section');
     videoSection.innerHTML += '<p>Loading more videos... Stay tuned!</p>';
